@@ -12,7 +12,7 @@ def check_stock(url):
 
     # Look for the "Out of Stock" text in the specified div
     stock_status_div = soup.find('div', class_='m-0 leading-none py-fm8 px-fm16 md:py-f8 md:px-f20 rounded-full bg-white text-black border-[1px] border-[#000000] fmtext-10 md:ftext-10 inline-flex justify-center items-center gap-fm8 md:gap-f8 w-full md:w-auto')
-    if stock_status_div and 'Out of Stock' in stock_status_div.get_text():
+    if stock_status_div and 'Out of Stocks' in stock_status_div.get_text():
         return False
     return True
 
